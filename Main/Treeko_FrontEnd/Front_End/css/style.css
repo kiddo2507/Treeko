@@ -26,6 +26,23 @@ h1,h2, h3, h4, h5, h6 {
 	padding:0 20px 0 20px;
 	position:relative;
 }
+
+.landalot{
+	width:40%;
+	margin:auto;
+	display:block;
+
+}
+
+.landalot h2{
+	text-align:center;
+
+}
+
+.landalot a{
+	text-align:center;
+}
+
 #wrapper{
 	width:100%;
 	margin:0;
@@ -281,10 +298,10 @@ display: inline-block;
 }
 
 #featured{
-	width: 100%;
+	width: 70%;
 	background:#000;
 	position:relative;
-	margin:0;
+	margin:auto;
 	padding:0;
 }
 /*  Menu ends here
@@ -295,15 +312,15 @@ display: inline-block;
 ==================================== */
 
 /* --- flexslider --- */
+
 #featured .flexslider {
-	padding:10;
+	padding:0;
 	background: #fff;
-	margin-left: 5;
-	margin-right: 5;
-	zoom: 0;
+	position: relative;
+	zoom: 1;
 }
 .flex-direction-nav .flex-prev{
-left:10px;
+left:0px;
 }
 .flex-direction-nav .flex-next{
 right:0px;
@@ -324,11 +341,7 @@ right:0px;
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
 .flex-caption p {margin: 0 0 15px;}
 .skill-home{
-margin: auto;
-text-align: center;
-padding-left: 400px;
-width: auto;
-display: flex;
+margin-bottom:50px;
 }
 .c1{
 border: #ed5441 1px solid;
@@ -364,7 +377,6 @@ display: inline-table;
 padding-top: 20px;
 font-size: 36px;
 font-weight: 700;
-text-align: center;
 }
 .testimonial-solid {
 padding: 50px 0 60px 0;
@@ -433,9 +445,11 @@ bottom: -30px;
     color: #1C1D21;
     font-weight: bold;
 }
+
 .form-control{
 border-radius:0;
 }
+
 
 
 /* Testimonial
@@ -736,6 +750,8 @@ ul.link-list li{
 	padding:2px 0 2px 0;
 	list-style:none;
 }
+
+
 footer{
 background: #14A085;
 }
@@ -799,9 +815,10 @@ border: 1px solid #F3F3F3;
 padding: 0 15px 12px;
 padding-top: 41px;
 margin-top: -42px;
-text-align: left;
+text-align: center;
 background-color: #F9F9F9;
-position: relative;}
+position: relative;
+}
 
 
 
@@ -1033,7 +1050,7 @@ footer .widget .flickr_badge img {
 
 
 footer{
-	padding:50px 0 0 0;
+	padding:20px 0 0 0;
 	color:#f8f8f8;
 }
 
@@ -1072,8 +1089,8 @@ ul.social-network li {
 	text-shadow:none;
 	color:#f5f5f5;
 	padding:0;
-	padding-top:30px;
-	margin:20px 0 0 0;
+	padding-top:0px;
+	margin:0px 0 0 0;
 	background: #14A085;
 }
 
@@ -1329,7 +1346,7 @@ padding-top: 2px;
 	}
 
 	#featured .flexslider .slide-caption {
-		width: 90%;
+		width: 70%;
 		padding: 2%;
 		position: absolute;
 		left: 0;
@@ -1414,7 +1431,6 @@ padding-top: 2px;
 		height:20px;
 		font-size:14px;
 	}
-
 
 }
 

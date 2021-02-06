@@ -27,6 +27,18 @@ h1,h2, h3, h4, h5, h6 {
 	position:relative;
 }
 
+
+.fblogo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+}
+
+#images{
+    text-align:center;
+}
+
 .landalot{
 	width:40%;
 	margin:auto;
@@ -42,6 +54,7 @@ h1,h2, h3, h4, h5, h6 {
 .landalot a{
 	text-align:center;
 }
+
 
 #wrapper{
 	width:100%;

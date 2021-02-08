@@ -499,8 +499,12 @@ section.callaction {
 }
 
 #content img {
-	max-width:100%;
-	height:auto;
+
+	height:200px;
+	width : 200px;
+	border-radius :100%;
+	margin : auto;
+
 }
 
 .cta-text {

@@ -4,6 +4,18 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="header_final.css" rel="stylesheet" type="text/css">
+	<script src="jquery/jquery.min.js"></script>
+		<!---- jquery link local dont forget to place this in first than other script or link or may not work ---->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!---- boostrap.min link local ----->
+	<link rel="stylesheet" href="css/style.css">
+		<!---- boostrap.min link local ----->
+	<script src="js/bootstrap.min.js"></script>
+		<!---- Boostrap js link local ----->
+	<link rel="icon" href="images/icon.png" type="image/x-icon" />
+		<!---- Icon link local ----->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!---- Font awesom link local ----->
   <title>Treeko</title>
 </head>
 <body>
@@ -22,4 +34,68 @@
         <a><li>LogIn</li></a>
     </div>
   </div>
+<!--login page-->
+
+<div class="container-fluid">
+  <div class="container">
+    <h2 class="text-center" id="title">Treeko</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <form role="form" method="post" action="register.php">
+          <fieldset>
+            <p class="text-uppercase pull-center"> SIGN UP.</p>
+            <div class="form-group">
+              <input type="text" name="username" id="username" class="form-control input-lg" placeholder="username">
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+            </div>
+              <div class="form-group">
+              <input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Password2">
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                By Clicking register you're agree to our policy & terms
+              </label>
+              </div>
+            <div>
+                  <input type="submit" class="btn btn-lg btn-primary   value="Register">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="col-md-2">
+        <!-------null------>
+      </div>
+
+      <div class="col-md-5">
+          <form role="form">
+          <fieldset>
+            <p class="text-uppercase"> Login using your account: </p>
+
+            <div class="form-group">
+              <input type="email" name="username" id="username" class="form-control input-lg" placeholder="username">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+            </div>
+            <div>
+              <input type="submit" class="btn btn-md" value="Sign In">
+            </div>
+
+          </fieldset>
+      </form>
+      </div>
+    </div>
+  </div>
+  <p class="text-center">
+    <small id="passwordHelpInline" class="text-muted"> Developer:<a href="http://www.psau.edu.ph/"> Pampanga state agricultural university ?</a> BS. Information and technology students @2017 Credits: <a href="https://v4-alpha.getbootstrap.com/">boostrap v4.</a></small>
+  </p>
+</div>
 </section>

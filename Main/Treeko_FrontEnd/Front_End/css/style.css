@@ -493,7 +493,7 @@ section.callaction {
 ==================================== */
 
 #content {
-	position:relative;
+	position:auto;
 	background:#fff;
 	padding:50px 0 0px 0;
 }
@@ -502,9 +502,12 @@ section.callaction {
 
 	height:200px;
 	width : 200px;
-	border-radius :100%;
-	margin : auto;
+	border-radius :50%;
+}
 
+.container landalot{
+	padding: 0 10%;
+	margin: 30px;
 }
 
 .cta-text {

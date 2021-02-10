@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Customer Service</title>
+		<style media="screen">
+			#custom-button{
+				padding: 10px;
+				color: white;
+				background-color: #009579;
+				border: 1px solid #000;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			#custom-button:hover{
+				background-color: #00b28f;
+			}
+			#custom-text{
+				margin-left: 10px;
+				font-family: sans-serif;
+				color: #aaa;
+			}
+		</style>
+	</head>
+	<body>
+		<form id= "locationbtn">
+			<label for = "locationame">Location:</label><br>
+			<input type = "text" name="Type your location"><br>
+		</form>
+		<form id= "areabtn">
+			<label for = "areaofland">Area (in m^2):</label><br>
+			<input type = "number" name="Enter the area in metre square"><br>
+		</form>
+		<h3>Documents</h3>
+		<form id= "aadharbtn">
+			<input type="file" id="real-file" hidden="hidden" />
+			<button type="button" id="custom-button">Upload aadhar card.</button>
+			<span id="custom-text">No file chosen, yet.</span>
+		</form>
+		<form id = "landbtn">
+			<input type="file" id="real-file" hidden="hidden" />
+			<button type="button" id="custom-button">Upload your land documents.</button>
+			<span id="custom-text">No file chosen, yet.</span>
+	  </form>
+
+
+
+
+		<script type="text/javascript">
+			const realFileBtn = document.getElementById("real-file");
+			const customBtn = document.getElementById("custom-button");
+			const customTxt = document.getElementById("custom-text");
+
+			customBtn.addEventListener("click", function() {
+				realFileBtn.click()
+			});
+
+
+		</script>
+	</body>
+</html>

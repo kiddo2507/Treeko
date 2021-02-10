@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Customer Service</title>
+				<link rel="stylesheet" href="login/services.css">
 		<style media="screen">
 			#custom-button{
 				padding: 10px;
@@ -23,30 +24,29 @@
 		</style>
 	</head>
 	<body>
-		<form id= "locationbtn">
+		<form id="locationbtn" class="input-group" action="index.html" method="post">
 			<label for = "locationame">Location:</label><br>
-			<input type = "text" name="Type your location"><br>
+			<input type="text" class="input-field" placeholder="location" required><br>
 		</form>
-		<form id= "areabtn">
+
+  	<form id="areabtn" class="input-group" action="index.html" method="post">
 			<label for = "areaofland">Area (in m^2):</label><br>
-			<input type = "number" name="Enter the area in metre square"><br>
+			<input type="number" class="input-field" placeholder="areaofland" required>
 		</form>
-		<h3>Documents</h3>
-		<form id= "aadharbtn">
+
+		<form id="aadharbtn" class="input-group" action="index.html" method="post">
 			<input type="file" id="real-file" hidden="hidden" />
 			<button type="button" id="custom-button">Upload aadhar card.</button>
 			<span id="custom-text">No file chosen, yet.</span>
 		</form>
-		<form id = "landbtn">
+
+		<form id="landbtn" class="input-group" action="index.html" method="post">
 			<input type="file" id="real-file" hidden="hidden" />
 			<button type="button" id="custom-button">Upload your land documents.</button>
 			<span id="custom-text">No file chosen, yet.</span>
-	  </form>
+		</form>
 
-
-
-
-		<script type="text/javascript">
+		<script>
 			const realFileBtn = document.getElementById("real-file");
 			const customBtn = document.getElementById("custom-button");
 			const customTxt = document.getElementById("custom-text");
@@ -55,7 +55,13 @@
 				realFileBtn.click()
 			});
 
-
+			realFileBtn.addEventListener("change", function() {
+				if (realFileBtn.value){
+					customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+				} else {
+					customTxt.innerHTML = "No file chosen, yet."
+				}
+			});
 		</script>
 	</body>
 </html>

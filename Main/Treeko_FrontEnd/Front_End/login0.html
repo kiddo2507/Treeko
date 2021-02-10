@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
 		<title>Customer Service</title>
 				<link rel="stylesheet" href="login/services.css">
+				<link href="css/bootstrap.min.css" rel="stylesheet" />
+				<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+				<link href="css/jcarousel.css" rel="stylesheet" />
+				<link href="css/flexslider.css" rel="stylesheet" />
+				<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+				<link href="css/style.css" rel="stylesheet" />
 		<style media="screen">
 			#custom-button{
 				padding: 10px;
@@ -24,44 +30,101 @@
 		</style>
 	</head>
 	<body>
-		<form id="locationbtn" class="input-group" action="index.html" method="post">
+		<header>
+	        <div class="navbar navbar-default navbar-static-top">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html"><img class="l1" src="img/logo1.png" alt="logo"/></a>
+	                </div>
+	                <div class="navbar-collapse collapse ">
+	                    <ul class="nav navbar-nav">
+	                        <li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+	                        <li><a href="services.html">Services</a></li>
+	                        <li><a href="login.html">Login</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+		</header>
+
+		<form id="locationbtn" class="input-group1" action="index.html" method="post">
+			<h3>Land details</h3>
 			<label for = "locationame">Location:</label><br>
-			<input type="text" class="input-field" placeholder="location" required><br>
-		</form>
-
-  	<form id="areabtn" class="input-group" action="index.html" method="post">
+			<input type="text" class="input-field" placeholder="Enter location" required><br>
 			<label for = "areaofland">Area (in m^2):</label><br>
-			<input type="number" class="input-field" placeholder="areaofland" required>
+			<input type="number" class="input-field" placeholder="Enter area" required><br><br>
+			<button type="submit" placeholder="Save">Save</button>
 		</form>
 
-		<form id="aadharbtn" class="input-group" action="index.html" method="post">
+		<form id="aadharbtn" class="input-group" action="index.html" method="post"><center>
+			<h3>Documents</h3>
 			<input type="file" id="real-file" hidden="hidden" />
 			<button type="button" id="custom-button">Upload aadhar card.</button>
-			<span id="custom-text">No file chosen, yet.</span>
+			<input type="file" id="real-file" hidden="hidden" />
+			<button type="button" id="custom-button">Upload your land documents.</button><br><br>
+			<button type="submit" placeholder="Save">Submit</button></center>
 		</form>
 
-		<form id="landbtn" class="input-group" action="index.html" method="post">
-			<input type="file" id="real-file" hidden="hidden" />
-			<button type="button" id="custom-button">Upload your land documents.</button>
-			<span id="custom-text">No file chosen, yet.</span>
-		</form>
+		<footer>
+			<!-- Upper is here -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="widget">
+							<address>
+							<strong>Treeko</strong><br>
+							Noida<br>
+							 Pin-9000 India</address>
+							<p>
+								<i class="icon-phone"></i> (+xx) xxxxxx232balleballe <br>
+								<i class="icon-envelope-alt"></i> treeko@bennett.edu.noida xD
+							</p>
+						</div>
+					</div>
+			 </div>
+			</div>
+
+			<!-- Lower is here -->
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="copyright">
+								<p>
+									<span>&copy; Yawn</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<ul class="social-network">
+								<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script>
-			const realFileBtn = document.getElementById("real-file");
-			const customBtn = document.getElementById("custom-button");
-			const customTxt = document.getElementById("custom-text");
+		const realFileBtn = document.getElementById("real-file");
+    const customBtn = document.getElementById("custom-button");
+    const customTxt = document.getElementById("custom-text");
 
-			customBtn.addEventListener("click", function() {
-				realFileBtn.click()
-			});
+		customBtn.addEventListener("click", function() {
+			realFileBtn.click();
+		});
 
-			realFileBtn.addEventListener("change", function() {
-				if (realFileBtn.value){
-					customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
-				} else {
-					customTxt.innerHTML = "No file chosen, yet."
-				}
-			});
+
 		</script>
 	</body>
 </html>

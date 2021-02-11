@@ -32,6 +32,22 @@ h1,h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+#logo{
+	height: 95px;
+}
+
+#content{
+	margin-left: 180px;
+}
+
+#lg{
+	height: 95px;
+}
+
+#head{
+	margin-right: 250px;
+}
+
 .input-group1{
 	max-width: 50%;
   display: inline-block;

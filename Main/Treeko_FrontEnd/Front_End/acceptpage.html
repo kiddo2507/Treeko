@@ -1,7 +1,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Add proof</title>
+    <title>Accepted [C]</title>
     <link rel="stylesheet" href="login/services.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -26,6 +26,17 @@
 				font-family: sans-serif;
 				color: #aaa;
 			}
+      .active:hover{
+        cursor: default;
+      }
+      #custom-button{
+        margin-bottom: 100px;
+      }
+      .contenttt{
+        border: 1px solid rgb(0,0,0);
+        padding: 10px;
+        margin: 50px 200px;
+      }
 	</style>
   </head>
   <body>
@@ -42,8 +53,9 @@
 	                </div>
 	                <div class="navbar-collapse collapse ">
 	                    <ul class="nav navbar-nav">
-	                        <li class="active"><a href="index.html">Home</a></li>
+	                        <li><a href="index.html">Home</a></li>
 							            <li><a href="about.html">About Us</a></li>
+                          <li class="active"><a>Services</a></li>
 	                        <li><a href="login.html">Login</a></li>
 													<li><a href="#">Welcome, {{}}</a></li>
 	                    </ul>
@@ -52,12 +64,14 @@
 	        </div>
 		</header>
 
-    <h1>Request Status</h1>
-    <p>Your request for {{location}} location has been <b>accepted</b>.</p>
-    <p>You are required to plant {{no. of trees}} trees of {{type of trees}} type in {{location-admin}} location.</p>
-    <p>You are also required to submit the proof of the same.</p><br><br>
+    <div class="contenttt">
+      <center><h1>Request Status</h1>
+      <p>Your request for {{location}} location has been <b>accepted</b>.</p>
+      <p>You are required to plant {{no. of trees}} trees of {{type of trees}} type in {{location-admin}} location.</p>
+      <p>You are also required to submit the proof of the same.</p><br><br>
 
-    <button type="button" id="custom-button">Okay.</button>
+      <button type="button" id="custom-button">Okay.</button></center>
+    </div>
     <footer>
       <!-- Upper is here -->
       <div class="container">

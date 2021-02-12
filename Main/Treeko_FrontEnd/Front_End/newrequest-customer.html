@@ -27,7 +27,11 @@
 				font-family: sans-serif;
 				color: #aaa;
 			}
-
+			#f1{
+				display: block;
+				margin: auto;
+				margin-bottom: 100px;
+			}
 		</style>
 	</head>
 	<body>
@@ -57,14 +61,13 @@
 
 		<form id="f1" class="input-group1" action="index.html" method="post">
 			<h3>Land details</h3>
+			<label for = "username">Enter your details.</label><br>
+			<input type="text" class="input-field" placeholder=" Enter Username" required><br>
 			<label for = "locationame">Location:</label><br>
 			<input type="text" class="input-field" placeholder="Enter location" required><br>
 			<label for = "areaofland">Area (in m^2):</label><br>
 			<input type="number" class="input-field" placeholder="Enter area" required><br><br>
 			<button type="submit" placeholder="Save">Save</button>
-		</form>
-
-		<form id="f2" class="input-group" action="index.html" method="post"><center>
 			<h3>Documents</h3>
 			<input type="file" id="real-file" hidden="hidden" />
 			<button type="button" id="custom-button">Upload aadhar card.</button>
@@ -72,7 +75,6 @@
 			<button type="button" id="custom-button">Upload your land documents.</button><br><br>
 			<button type="submit" placeholder="Save">Submit</button></center>
 		</form>
-
 		<footer>
 			<!-- Upper is here -->
 			<div class="container">

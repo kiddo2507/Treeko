@@ -5,6 +5,36 @@
   <title>Login | SignUp </title>
   <link rel='stylesheet' href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href = "admin_login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .buttonnn{
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+  }
+  .button-box{
+    width: 220px;
+    margin:35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+  }
+  .toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #009579;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+  }
+  .input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+  }
+  </style>
 </head>
 <body>
    <div class= 'wrapper'>
@@ -12,7 +42,8 @@
     <form action="Login-customer" method="post">
       <input type="text" placeholder="Username">
       <input type="password" placeholder="Password">
-      <input type="submit" value="LOGIN">
+      <button type="button" class="buttonnn input-group toggle-btn" name="button">LOGIN</button>
+      <button type="button" class="buttonnn toggle-btn" name="button">REGSTER</button>
     </form>
     <div class = 'bottom-text'>
       <input type="checkbox" name="remember" checked ="checked"> Remember me

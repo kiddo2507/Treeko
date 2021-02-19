@@ -1,0 +1,79 @@
+{% load static %}
+<!doctype html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Login | SignUp </title>
+  <link rel='stylesheet' href= "{% static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'%}">
+  <link rel="stylesheet" href = "{% static 'login.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <style>
+  .buttonn{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 15px;
+    float: left;
+    width: 45%;
+    margin-left: 0;
+  }
+  .buttonnn{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 15px;
+    float: right;
+    margin-right: 0;
+    width: 45%;
+  }
+  .button-box{
+    width: 220px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+  }
+  .toggle-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #009579;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+  }
+  .socials{
+    top: 0;
+  }
+  </style>
+</head>
+<body>
+    <div class= 'wrapper'>
+    <h1>Register</h1>
+    <form action="register" method="POST">
+        {% csrf_token %}
+      <input type="text" name="username" placeholder="Username">
+      <input type="text" name="email" placeholder="Email Id">
+      <input type="password" name="password1" placeholder="Password">
+      <input type="password" name="password2" placeholder="Confirm Password">
+        <a href="customer_signin_left.html"><button type="button" class="buttonn toggle-btn" name="button">LOGIN INSTEAD</button></a>
+      <button type="submit" class="buttonnn toggle-btn" name="button">REGSTER NOW</button>
+    </form> <br><br>
+    <div class = 'bottom-text'>
+      <input type="checkbox" name="remember" checked ="checked"> Remember me
+    </div>
+         <div>
+            {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+        </div>
+
+  </div>
+</body>
+</html>

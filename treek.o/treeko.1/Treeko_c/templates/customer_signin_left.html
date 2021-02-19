@@ -1,0 +1,81 @@
+{%  load static %}
+<!doctype html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Login | SignUp </title>
+  <link rel='stylesheet' href= "{% static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'%}">
+  <link rel="stylesheet" href = "{% static 'login.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <style>
+  .buttonn{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 15px;
+    float: left;
+    width: 45%;
+    margin-left: 0
+  }
+  .buttonnn{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 15px;
+    float: right;
+    margin-right: 0;
+    width: 45%;
+  }
+  .button-box{
+    width: 220px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+  }
+  .toggle-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #009579;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+    margin-top: 18px;
+  }
+  .input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+  }
+  </style>
+  </head>
+<body>
+    <div class= 'wrapper'>
+    <h1>Sign in </h1>
+    <form action="login" method="POST">
+        {% csrf_token %}
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="pass" placeholder="Password">
+      <button type="submit" class="buttonn toggle-btn" name="button">LOGIN</button>
+        <a href="register"><button type="button" class="buttonnn toggle-btn" name="button">REGSTER</button></form></a>
+    </form> <br> <br> <br> <br>
+    <div class = 'bottom-text'>
+      <input type="checkbox" name="remember" checked ="checked"> Remember me
+      <a href="#">Forgot Password? </a>
+    </div>
+        <div>
+            {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+        </div>
+
+
+    <div class="socials">
+      <a href="{% static '#'%}"><i class = " fa fa-facebook"></i></a>
+      <a href="{% static '#'%}"><i class = " fa fa-twitter"></i></a>
+      <a href="{% static '#'%}"><i class = " fa fa-pinterest"></i></a>
+      <a href="{% static '#'%}"><i class = " fa fa-linkedin"></i></a>
+    </div>
+    </div>
+  </body>
+</html>

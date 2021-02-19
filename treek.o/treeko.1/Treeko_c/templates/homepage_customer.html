@@ -1,0 +1,210 @@
+<!-- General Stuff -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Treeko</title>
+
+<!-- CSS Idhar hai -->
+<link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet" />
+<link href="{%static 'css/fancybox/jquery.fancybox.css'%}" rel="stylesheet">
+<link href="{%static 'css/jcarousel.css'%}" rel="stylesheet" />
+<link href="{%static 'css/flexslider.css'%}" rel="stylesheet" />
+<link href="{%static 'js/owl-carousel/owl.carousel.css'%}" rel="stylesheet">
+<link href="{%static 'css/style.css'%}" rel="stylesheet" />
+</head>
+<body>
+
+<div id="wrapper">
+	<!-- Navigation Bar is here -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home_c"><img id="lg" src="{%static 'img/logo1.png'%}" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="home_c">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+
+                        <li><a href="home">Logout</a></li>
+												<li><a href="#">Welcome {{user.username}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- Navigation Bar Ends Here -->
+	<!-- Slider -->
+	<section id="featured">
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="{% static 'img/slides/1.jpg'%}" alt=""/>
+                <div class="flex-caption">
+                   <div class="item_introtext">
+					<strong>WANT TO CONSTRUCT SOMETHING BUT<BR><BR> DONT HOW TO</strong>
+                </div>
+              </li>
+              <li>
+                <img src="{% static 'img/slides/2.jpg'%}" alt="" />
+                <div class="flex-caption">
+                     <div class="item_introtext">
+					<strong>GO ABOUT THE LAND CLEAREANCE AND <BR><BR>LAWS.GUESS WHAT, </strong>
+					 </div>
+                </div>
+              </li>
+              <li>
+                <img src="{% static 'img/slides/3.jpg'%}" alt="" />
+                <div class="flex-caption">
+                     <div class="item_introtext">
+					<strong>A WILD TREEKO JUST APPEARED TO HELP <BR><BR><BR>YOU OUT!!!</strong>
+					 </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+	</section>
+	<!-- Slider Ends Here -->
+
+	<!-- Land Allotment Button -->
+	<section class="y" id="content">
+		<div class="container">
+			<div class ="landalot">
+				<img id="b" src="{%static 'img/landallotment.jpg'%}" alt=""/>
+				<br>
+				<h2 id="head">Land Allotment</h2>
+				<div id="a1">
+					<a href="2ndpage_customer.html" class="btn btn-large btn-theme">Click Here For Land Allotment</a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	<!-- Land Allotment Button Ends here -->
+	<br>
+	<div class="testimonial-area">
+	    <div class="testimonial-solid">
+	        <div class="container">
+	            <div class="testi-icon-area">
+	                <div class="quote">
+	                    <i class="fa fa-microphone"></i>
+	                </div>
+	            </div>
+	            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	                <ol class="carousel-indicators">
+	                    <li data-target="#carousel-example-generic" data-slide-to="0" class="">
+	                        <a href="{% static '#' %}"></a>
+	                    </li>
+	                    <li data-target="#carousel-example-generic" data-slide-to="1" class="">
+	                        <a href="{% static '#' %}"></a>
+	                    </li>
+	                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active">
+	                        <a href="{% static '#' %}"></a>
+	                    </li>
+	                    <li data-target="#carousel-example-generic" data-slide-to="3" class="">
+	                        <a href="{% static '#' %}"></a>
+	                    </li>
+	                </ol>
+	                <div class="carousel-inner">
+	                    <div class="item">
+	                        <p>wouldnt have thought this was so much work</p>
+	                        <p>
+	                            <b>- Kshitij -</b>
+	                        </p>
+	                    </div>
+	                    <div class="item">
+	                        <p>html was super boring</p>
+	                        <p>
+	                            <b>- Priya -</b>
+	                        </p>
+	                    </div>
+	                    <div class="item active">
+	                        <p>my laptop betrayed me like thrice</p>
+	                        <p>
+	                            <b>- Shraddha-</b>
+	                        </p>
+	                    </div>
+	                    <div class="item">
+	                        <p>dentist knocked me out for a day</p>
+	                        <p>
+	                            <b>- Yuvraj-</b>
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- Comments Region Ends Here -->
+
+	<br>
+	<br>
+	<!-- Footer is here -->
+	<footer>
+
+
+
+		<!-- Lower is here -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="widget">
+						<address>
+						<strong>Treeko</strong><br>
+						Noida<br>
+						 Pin-201307 India</address>
+						<p>
+							<i class="icon-phone"></i> (+91)  9910383210<br>
+							<i class="icon-envelope-alt"></i> treeko.kpys@gmail.com
+						</p>
+					</div>
+				</div>
+		 </div>
+		</div>
+
+		<!-- Lower is here -->
+		<div id="{% static 'sub-footer' %}">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="copyright">
+							<p>
+								<span>&copy; Treeko</a>
+							</p>
+						</div>
+					</div>
+	</footer>
+	<!-- Footer Ends here -->
+</div>
+
+
+
+
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<a href="{% static '#' %}" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/portfolio/jquery.quicksand.js' %}"></script>
+<script src="{% static 'js/portfolio/setting.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script src="{% static 'js/animate.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<!--<script src="{% static 'js/owl-carousel/owl.carousel.js' %}"></script> -->
+</body>
+</html>
